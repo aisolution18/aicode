@@ -6,7 +6,7 @@ img = np.array(Image.open("/home/nikky/Downloads/800px-Crew_of_STS-107,_official
 
 h, w, d = img.shape
 
-newImage = np.zeros((h, w, d))
+newImage = np.zeros((h, w, d), dtype = np.uint8)
 
 for i in range(1, h-1):
     for j in range(1, w-1):
