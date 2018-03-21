@@ -6,7 +6,7 @@ img = np.array(Image.open("/home/nikky/Downloads/TPancard.jpg"))
 
 h, w, d = img.shape
 
-newImage = np.zeros((h, w, d))
+newImage = np.zeros((h, w, d), dtype=np.uint8)
 
 for i in range(1, h):
     for j in range(1, w):
